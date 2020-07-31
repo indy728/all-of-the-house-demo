@@ -12,9 +12,15 @@ const white = {
 }
 
 const grey = {
-  lightGrey: 'e7eaf0',
+  lightGrey: '#e7eaf0',
+  footer: '#a7afba',
+  border: '#2c3242',
+}
+
+const blue = {
+  footer: '#101523',
 }
 
 export const palette = {
-  black, white, pink, grey,
+  black, white, pink, grey, blue
 }
