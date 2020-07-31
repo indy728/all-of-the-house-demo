@@ -17,6 +17,15 @@ class App extends Component {
       {
         name: 'Home', component: Home, path: '/', exact: true,
       },
+      {
+        name: 'Tater Tots', component: Home, path: '/TaterTots', exact: true,
+      },
+      {
+        name: 'Sites@', component: Home, path: '/Sites', exact: true,
+      },
+      {
+        name: 'Try It Out', component: Home, path: '/Try', exact: true,
+      },
     ];
 
     const routes = (
@@ -38,7 +47,7 @@ class App extends Component {
     return (
       <ThemeProvider theme={theme}>
         <GlobalStyle />
-        <Layout>
+        <Layout routeComponents={routeComponents}>
           {routes}
         </Layout>
       </ThemeProvider>

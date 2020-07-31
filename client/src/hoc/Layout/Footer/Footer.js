@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-import PropTypes from 'prop-types';
 import { device } from 'themes/media';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
@@ -73,9 +72,7 @@ const Footer = (props) => {
               <a href="https://www.facebook.com/kyle.murray.7758235/">
                 <FontAwesomeIcon icon={faFacebook} size="2x"/>
               </a>
-              <a href="#">
-                <FontAwesomeIcon icon={faTwitter} size="2x"/>
-              </a>
+              <FontAwesomeIcon icon={faTwitter} size="2x"/>
               <a href="https://www.linkedin.com/in/kyledevlinmurray/">
                 <FontAwesomeIcon icon={faLinkedin} size="2x"/>
               </a>
@@ -98,9 +95,6 @@ const Footer = (props) => {
       </FooterBottom>
     </Wrapper>
   );
-};
-
-Footer.propTypes = {
 };
 
 export default Footer;
