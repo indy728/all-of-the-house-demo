@@ -20,6 +20,7 @@ const Wrapper = styled.div`
     background-color: ${({ theme }) => theme.palette.white.default};
     font-family: ${({ theme }) => theme.fonts.serif};
     transition: .2s all ease-out;
+    width: 40rem;
 
     * {
       color: ${({ theme }) => theme.palette.black.default};

@@ -44,8 +44,6 @@ const Login = styled.div`
 
 const Header = ({ routeComponents: navItems }) => {
 
-  console.log(navItems);
-
   return (
     <Wrapper>
       <Container>

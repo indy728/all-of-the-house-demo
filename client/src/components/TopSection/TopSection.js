@@ -21,10 +21,30 @@ const TopSectionContent = styled.div`
 
   display: flex;
   align-items: center;
+  justify-content: center;
 `;
 
 const BigAdHeader = styled.div`
+  margin-bottom: 6rem;
+  text-align: center;
 
+  h1 {
+    font-size: 6rem;
+    font-weight: 600;
+    font-family: ${({ theme }) => theme.fonts.jumboSans};
+    color: ${({ theme }) => theme.palette.white.default};
+  }
+
+  span.outer {
+    border-right: 2px solid ${({ theme }) => theme.palette.black.default};
+
+    overflow: hidden;
+
+    span.inner {
+      color: ${({ theme }) => theme.palette.pink.default};
+      transform: translateX(50%;);
+    }
+  }
 `;
 
 const TopSection = () => {
@@ -43,18 +63,18 @@ const TopSection = () => {
     <Wrapper className="section__intro">
       <DarkOverlay />
       <TopSectionContent>
-        <Container>
+        <Container className="col-8 d-flex flex-column align-items-center">
           <BigAdHeader>
             <h1>
-              Building ReactJS apps with {technologies[iterator]}
+              Building ReactJS apps with <span className="outer"><span className="inner">{technologies[iterator]}</span></span>
             </h1>
           </BigAdHeader>
           <div>
-            <Button className="white" height="5rem">
-            <a href="https://kyledevlinmurray.com">
-            Link to Kyle's Homepage
+            <a href="https://kyledevlinmurray.com" style={{'textDecoration': 'none'}}>
+              <Button className="white" height="5rem">
+              Link to Kyle's Homepage
+              </Button>
             </a>
-            </Button>
           </div>
         </Container>
       </TopSectionContent>
