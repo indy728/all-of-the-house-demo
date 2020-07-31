@@ -4,7 +4,7 @@
   "description": "A demo app presentable to All of the House",
   "main": "server/index.js",
   "scripts": {
-    "start": "node server",
+    "start": "node server/index.js",
     "dev-server": "nodemon server/devserver.js",
     "client": "npm start --prefix client",
     "dev": "npm-run-all --parallel dev-server client"
