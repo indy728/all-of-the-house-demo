@@ -4,7 +4,7 @@ import {
 } from 'react-router-dom';
 import { ThemeProvider } from 'styled-components';
 import { Home } from 'pages';
-// import Layout from 'hoc/layout/layout';
+import Layout from 'hoc/Layout/Layout';
 import theme from 'themes';
 import GlobalStyle from 'themes/GlobalStyle';
 
@@ -38,7 +38,9 @@ class App extends Component {
     return (
       <ThemeProvider theme={theme}>
         <GlobalStyle />
-        {routes}
+        <Layout>
+          {routes}
+        </Layout>
       </ThemeProvider>
     );
   }

@@ -1,7 +1,7 @@
 import { createGlobalStyle } from 'styled-components';
 import themes from 'themes';
 
-const { device, palette } = themes;
+const { device, palette, fonts } = themes;
 
 const GlobalStyle = createGlobalStyle`
   *,
@@ -25,11 +25,12 @@ const GlobalStyle = createGlobalStyle`
     background-color: ${palette.white.default};
     min-height: 100vh;
     font-size: 1.8rem;
-    font-family: Roboto;
+    font-family: ${fonts.sansSerif};
 
     * {
       color: ${palette.black.default};
     }
+
   }
 `;
 
